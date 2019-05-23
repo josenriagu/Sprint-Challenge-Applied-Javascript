@@ -32,30 +32,45 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    The DOM - acronym for `Document Object Model` is an object representation of the HTMl elements of a webpage. It is a dynamic, language neutral Application Programming Interface that treats HTMl document as a tree-like structure consisting of node objects, each representing contents and styles. The DOM lives in the browser.
+
 2. What is an event?
+
+    In a basic understanding, I see an event as any browser activity or user related action that could be used to manipulate or otherwise add further innteractivity to the website. For instance;
+    `The browser disconnects from network --- event!`
+    `The browser finishes loading contents --- event!`
+    `The user moves his mouse pointer on the view port --- Aha! event!!`
+    `The user clicks on an element --- another event!`
 
 3. What is an event listener?
 
+    Having the basic understanding of what an event is, we may now say an event listener is a method that checks if an event has taken place, determines the type of event and triggers the call back function. For instance;
+    We may tell the event listener to check when the user clicks on some element and then flash some color on the screen! The method addEventListener takes two arguments;` the event type` and the `call back function` `{addEventListener('event-type', 'function())}`
+
 4. Why would we convert a NodeList into an Array?
+
+    By default, a NodeList is not a real array. It is just an Array-like object. It does not have acess to Array methods other than `.forEach()`. However, to be able to manipulate it like a real array, we use the the `Array.from()` method to convert it.
 
 5. What is a component?
 
+    A component is simply a `basic, reusable set of code` that could be potentially used to build other blocks. As a basic building block, similar blocks can be built by just passing some object parameters or any other as the case may be.
+
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] Fork the project into your GitHub user account
+* [X] Clone the forked project into a directory on your machine
+* [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [X] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-* [ ] Look through the HTML code paying particular attention to the Tabs component and the Cards components. You will notice they share a data attribute. We will be using this data attribute to determine which cards should show when each tab is selected.
+* [X] Look through the HTML code paying particular attention to the Tabs component and the Cards components. You will notice they share a data attribute. We will be using this data attribute to determine which cards should show when each tab is selected.
 
-* [ ] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item.  **Note: You will need to un-comment the code after the lines of instructions.  The code is commented out so you can work error-free**
+* [X] Following the instructions in the `Tabs.js` file, complete the `TabLink`, and `TabCard` class components. It will look and feel very similar to the last project we worked on, but with a twist. Now, instead of one `Item` to display, we will need to display a collection of `Cards`. Think about ways to iterate over an array and manipulate each item.  **Note: You will need to un-comment the code after the lines of instructions.  The code is commented out so you can work error-free**
 
-* [ ] Once you get your `Tab` component working properly add a couple more articles yourself and check out how it works.
+* [X] Once you get your `Tab` component working properly add a couple more articles yourself and check out how it works.
 
 ## Stretch Problems
 
